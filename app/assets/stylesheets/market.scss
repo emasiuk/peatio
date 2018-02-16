@@ -127,7 +127,7 @@ header {
     min-width: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: $panel-bg;
+    background-color: #253544;
     border: 1px solid $panel-default-border;
     box-shadow: 0px 0px 8px $panel-default-border;
 
@@ -183,7 +183,7 @@ header {
         background-size: cover;
         margin: 0 auto;
       }
-      span.locked { color: #777; }
+      span.locked { color: #d0d0d0; }
     }
     p { margin: 8px; }
   }
@@ -231,7 +231,7 @@ header {
   height: 100%;
   position: absolute;
   font-size: 14px !important;
-  background-color: #000;
+  background-color: #374c63;
   font-family: $font-family-monospace;
 }
 
@@ -246,7 +246,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 900;
-  background-color: rgba(44,44,44,0.8);
+  background-color: rgb(120, 179, 246);
   table {
     width: 100%;
     height: 100%;
@@ -355,6 +355,10 @@ header {
     table { margin-bottom: 0px;}
     overflow-y: auto;
   }
+}
+
+.panel-body-entry {
+  background-color: #2c3e50;
 }
 
 .has-left-dropdown {
@@ -468,6 +472,21 @@ header {
   }
 }
 
+.bord {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.bord-2 {
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.bord-3 {
+  border: 0;
+}
 /* layout position
 ----------------------------------------------- */
 #ask_entry, #bid_entry { width: $entry-width; height: $entry-height; }
@@ -481,7 +500,7 @@ header {
   .ask, .last, .bid {
     text-align: center;
     font-family: $font-family-monospace;
-    .hint { cursor: default; color: #777; }
+    .hint { cursor: default; color: #eee; }
   }
 
   .last {
@@ -507,8 +526,8 @@ header {
     }
 
     .obsolete {
-      color: #444;
-      .price, .amount, .volume, g { color: #444; }
+      color: #f2dede;
+      .price, .amount, .volume, g { color: #f2dede; }
     }
   }
 }
@@ -523,8 +542,8 @@ header {
 .switch {
   font-size: 12px;
   position: absolute;
-  a { color: #777; }
-  a:hover { color: lighten(#777, 50%); }
+  a { color: #eee; }
+  a:hover { color: lighten(#eee, 50%); }
   a.active { color: #eee; }
 }
 
@@ -547,7 +566,7 @@ header {
 
   table.depths-table {
     th, td { text-align: right; width: 90px; min-width: 90px; }
-    th { color: #888; }
+    th { color: #eee; }
     td { color: #eee; }
   }
 }
@@ -658,7 +677,7 @@ header {
       width: 99%;
       height: 0;
       padding: 0;
-      color: $gray-light;
+      color: #eee;
       text-align: center;
     }
 
@@ -804,7 +823,7 @@ header {
 }
 
 table {
-  thead { cursor: default; th { color: #777; }}
+  thead { cursor: default; th { color: #eee; }}
   &.table-hover { tbody > tr:hover { cursor: pointer;} }
 }
 
@@ -818,8 +837,8 @@ table {
 }
 
 .chart-ticker {
-  color: #777;
-  background-color: $panel-bg-alpha;
+  color: #aaa;
+  background-color: rgb(120, 179, 246);
   border: 1px solid $navbar-default-border;
   padding: 6px 0 6px 6px;
   font-size: 11px;
