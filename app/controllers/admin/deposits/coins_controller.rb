@@ -27,7 +27,7 @@ module Admin
         when 'collect_fee'
           deposit.collect!
         end
-        redirect_to :back, notice: t('admin.deposits.coins.update.notice')
+        redirect_to admin_deposit_index_path(currency.id)
       end
 
       private
